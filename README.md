@@ -35,7 +35,7 @@ Développer une IA qui :
 ### 1. Cloner le projet
 
 ```bash
-git clone https://github.com/ton-utilisateur/michel-casper-anti-scam.git
+git clone https://github.com/ccsnafi/michel-casper-anti-scam.git
 cd michel-casper-anti-scam
 ```
 
@@ -89,7 +89,9 @@ Projet réalisé dans le cadre d'un exercice IA & Voix
 
 ## 📸 Aperçu
 
-![interface](docs/preview.png) *(à ajouter)*
+## 📸 Aperçu
+
+[Voir la vidéo d'aperçu](preview.mp4)
 
 ---
 
