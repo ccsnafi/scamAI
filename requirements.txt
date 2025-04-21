@@ -1,0 +1,6 @@
+google-cloud-speech
+google-cloud-texttospeech
+huggingface_hub
+sounddevice
+soundfile
+pygame

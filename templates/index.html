@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>🎤 Michel CASPER - Anti-Arnaque IA</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="banner">
+                <img src="/static/banner-scam.png" alt="Bannière anti-arnaque" class="banner-img">
+            </div>
+            <div class="logo-area">
+                <img src="/static/logo-police.png" alt="Logo Anti-Arnaque" class="logo-img">
+                <div>
+                    <h1>Michel CASPER - Anti-Arnaque IA</h1>
+                    <p class="tagline">Faites tourner les escrocs en bourrique avec style 💬🕵️</p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="instruction-box">
+                <p>🎙️ Cliquez sur le bouton <strong>Parler</strong> puis parlez comme si vous étiez l’escroc.</p>
+                <p>🧠 Michel vous répondra en vocal avec sa voix naïve et crédible.</p>
+            </div>
+
+            <div class="michel-img-box">
+                <img src="/static/michel-avatar.png" alt="Michel Avatar" class="michel-img">
+            </div>
+
+            <button onclick="startRecording()" class="record-btn">🎙️ Parler</button>
+
+            <div class="conversation">
+                <div class="bubble escroc">
+                    <strong>🕴️ Escroc :</strong>
+                    <p id="transcription">...</p>
+                </div>
+                <div class="bubble michel">
+                    <strong>🧔 Michel :</strong>
+                    <p id="reply">...</p>
+                </div>
+            </div>
+
+            <audio id="voicePlayer" controls></audio>
+
+            <button onclick="downloadConversation()" class="download-btn">💾 Télécharger la conversation</button>
+        </main>
+
+        <footer>
+            <img src="/static/footer-lock.png" class="footer-img" alt="Lock Icon">
+            <p><strong>TENUDA-EKLOU Afi</strong> – Anti Scam Bot • Powered by Flask, Google Cloud, HuggingFace</p>
+        </footer>
+    </div>
+</body>
+</html>
