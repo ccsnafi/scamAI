@@ -1,122 +1,84 @@
 body {
-    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f7fa;
     margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #eef2f3, #cfd9df);
-    color: #222;
-}
-
-.container {
-    max-width: 960px;
-    margin: auto;
-    padding: 1.5rem;
-}
-
-.banner-img {
-    width: 100%;
-    border-radius: 12px;
-    margin-bottom: 1rem;
-}
-
-.logo-area {
+    font-family: 'Segoe UI', sans-serif;
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 1rem;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .chat-container {
+    width: 400px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+  
+  .chat-header {
     text-align: center;
-}
-
-.logo-img {
-    width: 60px;
-    height: 60px;
-}
-
-h1 {
-    font-size: 2rem;
-    margin: 0.5rem 0;
-}
-
-.tagline {
-    font-size: 0.95rem;
+    background: #e2e8f0;
+    padding: 15px;
+  }
+  
+  .chat-header h1 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .subtitle {
+    font-size: 13px;
     color: #555;
-}
-
-.instruction-box {
-    background-color: #fff9e5;
-    padding: 1rem;
-    border-radius: 10px;
-    margin: 1rem 0;
-    border-left: 6px solid #ffc107;
-}
-
-.michel-img-box {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.michel-img {
-    width: 110px;
-    border-radius: 50%;
-    border: 4px solid #e0e0e0;
-    box-shadow: 0 0 8px #aaa;
-    transition: all 0.3s ease;
-}
-
-.record-btn, .download-btn {
-    background-color: #007bff;
-    border: none;
-    padding: 0.9rem 1.8rem;
-    font-size: 1rem;
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
+  }
+  
+  .chat-main {
+    padding: 15px;
+  }
+  
+  .chat-bubbles {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .bubble {
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
+  .bubble-incoming {
+    background-color: #e1e1e1;
+    text-align: left;
+  }
+  
+  .bubble-outgoing {
+    background-color: #d4edda;
+    text-align: right;
+  }
+  
+  .record-button {
+    margin: 15px auto;
     display: block;
-    margin: 0.5rem auto 1.5rem;
-}
-
-.download-btn {
-    background-color: #28a745;
-}
-
-.record-btn:hover {
-    background-color: #0056b3;
-}
-
-.download-btn:hover {
-    background-color: #1e7e34;
-}
-
-.conversation {
-    background-color: white;
-    padding: 1.2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    margin-bottom: 1rem;
-}
-
-.bubble {
-    margin-bottom: 1rem;
-    padding: 1rem;
-    border-radius: 10px;
-    font-size: 1rem;
-}
-
-.bubble.escroc {
-    background-color: #fce3e3;
-}
-
-.bubble.michel {
-    background-color: #e3f1ff;
-}
-
-footer {
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .record-button:hover {
+    background-color: #357ab8;
+  }
+  
+  .chat-footer {
     text-align: center;
-    font-size: 0.9rem;
-    color: #666;
-    margin-top: 2rem;
-}
-
-.footer-img {
-    width: 32px;
-    margin-bottom: 0.5rem;
-}
+    font-size: 12px;
+    padding: 10px;
+    background: #e2e8f0;
+  }
+  

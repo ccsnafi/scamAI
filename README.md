@@ -1,32 +1,36 @@
 # 🧠 Michel CASPER - Anti-Arnaque IA
 
-> Un projet conçu pour **piéger les arnaqueurs téléphoniques** en leur faisant perdre du temps grâce à une IA vocale réaliste, crédible et... un peu trop bavarde 😄
+> Un assistant IA conçu pour **piéger les arnaqueurs téléphoniques** en leur faisant perdre un maximum de temps. Bluffant, bavard, crédible… Michel ne raccrochera jamais 😄
 
 ---
 
 ## 🎯 Objectif
 
-Développer une IA qui :
-- 🗣️ écoute un escroc via micro
-- 🤖 génère des réponses crédibles avec un LLM
-- 🔊 répond à l’escroc avec une voix humaine synthétisée
-- 🎭 joue un personnage naïf et distrait pour l’embarquer dans la discussion
+Ce projet vise à créer une **IA vocale interactive** qui :
+- 🎤 Capte la voix de l'arnaqueur via micro
+- 🧠 Génère des réponses crédibles grâce à un LLM
+- 🔊 Répond avec une voix humaine synthétisée
+- 🎭 Joue un personnage naïf, lent et curieux
+- ⏱️ Fait perdre un maximum de temps aux escrocs
 
 ---
 
 ## 🧔 Le personnage : Michel CASPER
 
-> Michel est un homme de 45 ans, vivant à Paris, naïf, gentil, passionné de timbres, un peu lent et bavard. Il est parfait pour occuper un escroc.
+> Michel est un homme de 45 ans, vivant à Paris. Gentil, très naïf, un peu distrait, et complètement passionné par les timbres. L'interlocuteur croit avoir ferré un pigeon... il se retrouve pris au piège 🪤
 
 ---
 
 ## 🧪 Technologies utilisées
 
-- 🎤 **Reconnaissance vocale** : Google Speech-to-Text
-- 🧠 **LLM** : HuggingFace (Qwen2.5-32B)
-- 🗣️ **Synthèse vocale** : Google Text-to-Speech
-- 🌐 **Interface web** : Flask + HTML + CSS + JS
-- 🎮 **Audio playback** : pygame
+| Fonction                        | Outil |
+|--------------------------------|-------|
+| 🎤 Reconnaissance vocale       | Google Speech-to-Text |
+| 🧠 Génération de réponses      | HuggingFace (Qwen2.5-32B) via Nebius |
+| 🔊 Synthèse vocale             | Google Text-to-Speech |
+| 🌐 Interface Web               | Flask + HTML/CSS/JS |
+| 🎮 Lecture audio locale (CLI)  | pygame |
+| 📦 Packaging                   | Python + virtualenv |
 
 ---
 
@@ -43,7 +47,7 @@ cd michel-casper-anti-scam
 
 ```bash
 python -m venv .venv
-.venv\Scripts\activate
+.venv\Scripts\activate  # (ou `source .venv/bin/activate` sur Mac/Linux)
 ```
 
 ### 3. Installer les dépendances
@@ -54,51 +58,54 @@ pip install -r requirements.txt
 
 ### 4. Ajouter vos clés API
 
-- Placez vos fichiers :
-  - `private/key.json` (clé Google Cloud)
-  - `private/nebius_api_key.txt` (clé HuggingFace via Nebius)
+Dans le dossier `private/` :
+- `key.json` → Clé Google Cloud (Speech-to-Text & TTS)
+- `nebius_api_key.txt` → Clé d’accès au LLM via HuggingFace Hub
 
 ---
 
-## 🚀 Lancer l’application web
+## 🚀 Lancer l’application Web
 
 ```bash
 python app.py
 ```
 
-Puis aller sur : [http://localhost:5000](http://localhost:5000)
+Puis ouvrir : [http://localhost:5000](http://localhost:5000) dans votre navigateur
 
 ---
 
-## 🧠 Fonctionnalités IA
+## 💬 Fonctionnalités de l’IA
 
-- Comprend ce que dit l’arnaqueur (micro)
-- Réagit en jouant un rôle crédible (LLM)
-- Répond avec une voix réaliste (TTS)
-- Ajoute hésitations, lapsus, répétitions
-- Affiche le dialogue + bouton de téléchargement
+- 🎧 Écoute en temps réel
+- 🧠 Génère des réponses adaptées, avec :
+  - Hésitations `[euh]`, silences `[hum]`
+  - Reformulations, lapsus, contradictions
+- 🔊 Restitue en vocal avec voix naturelle
+- 🪤 Garde l’arnaqueur au téléphone le plus longtemps possible
 
+---
+
+## 🖼️ Aperçu de l'application
+
+> Voici un aperçu de l'interface web :
+
+![Interface IA Anti-Arnaque](static/interface.png)
 ---
 
 ## 👤 Auteur
 
 **TENUDA-EKLOU Afi**  
-Projet réalisé dans le cadre d'un exercice IA & Voix
+Projet réalisé dans le cadre d’un exercice IA & Voix  
+✉️ [LinkedIn / GitHub ou toute info à ajouter ici]
 
 ---
 
-## 📸 Aperçu
+## ⚠️ Avertissement
 
-## 📸 Aperçu
-
-[Voir la vidéo d'aperçu](preview.mp4)
-
----
-
-## 🛡️ Avertissement
-
-Ce projet est un **prototype à but pédagogique**.  
-Il ne doit pas être utilisé pour contacter ou harceler qui que ce soit.  
-Les appels doivent être simulés dans un cadre contrôlé.
+Ce projet est un **prototype pédagogique**.  
+Ne pas l’utiliser pour nuire, enregistrer à l’insu ou harceler.  
+Simulez vos appels dans un cadre sécurisé et légal.
 
 ---
+
+🛠️ Propulsé par Flask, HuggingFace, Google Cloud et une bonne dose d’humour.
