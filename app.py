@@ -31,7 +31,7 @@ def transcribe_audio(file_path):
     with open(file_path, "rb") as f:
         content = f.read()
     audio = speech.RecognitionAudio(content=content)
-    config = speech.RecognitionConfig(language_code="fr-FR", sample_rate_hertz=44100)
+    config = speech.RecognitionConfig(language_code="fr-FR")
     result = client.recognize(config=config, audio=audio)
     if result.results:
         return result.results[0].alternatives[0].transcript
